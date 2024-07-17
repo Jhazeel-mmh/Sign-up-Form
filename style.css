@@ -28,32 +28,54 @@
 
 
 /* Style  */
+:root {
+  --primary-color: #7f66d6;
+}
+
+
+
 body {
+    display: flex;
+    justify-content: space-evenly;
     min-width: 100vw;
     min-height: 100vh;
 }
 
 .container {
-    width: 60%;
+    width: 50%;
+    height: 100vh;
     padding: 25px;
+    background-color: var(--primary-color);
 }
 
 
 form {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
+    justify-content: space-around;
+    margin: 0px -25px;
+    background-color: #fff;
 }
 
-form > div {
-    flex:  1 1 100%;
+.row {
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     margin: 10px;
 }
 
-form > div > div {
+.row > div {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin: 0px 10px;
+}
+
+input:required + span {
+    position: relative;
+}
+
+input:required + span::after {
+  content: "Required"
 }

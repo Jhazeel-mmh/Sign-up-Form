@@ -29,7 +29,8 @@
 
 /* Style  */
 :root {
-  --primary-color: #7f66d6;
+  --primary-color: #a066d6;
+  --secondary-color: #b82fc4;
 }
 
 
@@ -50,7 +51,7 @@ p {
 .container {
   display: flex;
   flex: 1;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-around;
   width: 50%;
   height: 100vh;
@@ -96,7 +97,7 @@ input {
 
 input:focus {
   outline: none;
-  border: 2px solid #452fc4;
+  border: 2px solid var(--secondary-color);
   box-shadow: 10px 10px 20px 3px; 
 }
 
@@ -117,7 +118,7 @@ input[type="submit"]{
   font-weight: 800;
   height: auto;
   padding: 10px;
-  background-color: #452fc4;
+  background-color: var(--secondary-color);
   box-shadow: 5px 5px 10px 1px;
 }
 
@@ -134,4 +135,17 @@ a:hover {
 a:active {
   text-decoration: none;
   color: #1518c5;
+}
+
+.side-img {
+  flex: 1;
+  height: 100vh;
+  background-image: url(side-img.jpg);
+  position: relative;
+}
+
+.credits {
+  position: absolute;
+  top: 95vh;
+  left: 1vw;
 }

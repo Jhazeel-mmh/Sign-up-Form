@@ -10,31 +10,37 @@
 <body>
     <div class="container">
         <div class="first section">
+            <h1>Sign Up Form</h1>
+            <p>
+                This is not an real online service, it is only for learning purpuses. <br>
+                Required fields are followed by
+                <strong><span aria-label="required">*</span></strong>.
+              </p>
         </div>
         <form>
             <div class="first-name">
-                <label for="frist">First Name: </label>
-                <input type="text" name="user-first-name" id="frist">
+                <label for="frist">*First Name: </label>
+                <input type="text" name="user-first-name" id="frist" required>
             </div>
             <div class="last-name">
                 <label for="last">Last Name: </label>
                 <input type="text" name="user-last-name" id="last">
             </div>
             <div class="email">
-                <label for="mail">Email: </label>
-                <input type="email" name="user-mail" id="mail">
+                <label for="mail">*Email: </label>
+                <input type="email" name="user-mail" id="mail" required>
             </div>
             <div class="phone">
                 <label for="phone">Phone Number: </label>
-                <input type="tel" name="user-phone" id="phone">
+                <input type="tel" name="user-phone" id="phone" minlength="8" maxlength="15">
             </div>
             <div class="password">
-                <label for="password">Password: </label>
-                <input type="password" name="user-password" id="password">
+                <label for="password">*Password: </label>
+                <input type="password" name="user-password" id="password" minlength="5" maxlength="8" required>
             </div>
             <div class="validation">
-                <label for="validation">Confirm Password: </label>
-                <input type="password" name="user-validation" id="validation">
+                <label for="validation">*Confirm Password: </label>
+                <input type="password" name="user-validation" id="validation" minlength="5" maxlength="8" required>
             </div>
         </form>
         <div class="second section">

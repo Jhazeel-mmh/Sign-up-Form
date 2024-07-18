@@ -31,6 +31,8 @@
 :root {
   --primary-color: #a066d6;
   --secondary-color: #b82fc4;
+  --error-color: #f00;
+  --right-color: #0f0;
 }
 
 
@@ -92,6 +94,7 @@ input {
   appearance: none;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
+  padding: 5px;
   width: 200px;
 }
 
@@ -110,7 +113,7 @@ input:required + span::after {
   content: "Required";
   font-size: 10px;
   left: 150px;
-  bottom: 65px;
+  bottom: 70px;
 }
 
 input[type="submit"]{
@@ -148,4 +151,30 @@ a:active {
   position: absolute;
   top: 95vh;
   left: 1vw;
+}
+
+
+.invalid {
+  border-color: var(--error-color); 
+
+}
+
+.invalid-spans {
+  color: var(--error-color);
+}
+
+.valid-spans {
+  color: var(--right-color);
+}
+
+.password {
+  position: relative;
+}
+
+.password-msg {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  font-size: 10px;
+  color: var(--error-color);
 }

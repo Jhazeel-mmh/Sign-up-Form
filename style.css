@@ -149,7 +149,7 @@ a:active {
 .side-img {
   flex: 1;
   height: 100vh;
-  background-image: url(side-img.jpg);
+  background-image: url(imgs/side-img.jpg);
   position: relative;
 }
 
@@ -159,6 +159,13 @@ a:active {
   left: 1vw;
 }
 
+#icon {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 5%;
+  left: 30%;
+}
 
 .invalid {
   border-color: var(--error-color); 
@@ -183,4 +190,20 @@ a:active {
   left: 20px;
   font-size: 10px;
   color: var(--error-color);
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  justify-content: space-between;
+}
+
+.github {
+  display: flex;
+  gap: 10px;
+}
+
+.github  img {
+  width: 20px;
 }

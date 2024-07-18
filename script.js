@@ -27,7 +27,8 @@ inputRequired.forEach(i => {
     i.addEventListener("input", () => {
         if (!i.validity.valid){
             i.classList.add("invalid");
-            document.querySelector(`#${i.id} + span`).classList.add("invalid-spans");      
+            document.querySelector(`#${i.id} + span`).classList.add("invalid-spans"); 
+            document.querySelector(`#${i.id} + span`).classList.remove("valid-spans");     
         } else {
             i.classList.remove("invalid");
             document.querySelector(`#${i.id} + span`).classList.remove("invalid-spans");

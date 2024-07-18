@@ -108,7 +108,13 @@ input:required + span {
     position: relative;
 }
 
+span {
+  color: #fff;
+}
+
 input:required + span::after {
+  padding: 5px;
+  background-color: #2b175a;
   position: absolute;
   content: "Required";
   font-size: 10px;
